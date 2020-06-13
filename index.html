@@ -9,6 +9,7 @@
     </head>
     <body>
         <main>
+
             <style>
                 body{
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -17,7 +18,7 @@
                 #navbar{
                     height: 150px;
                 }
-                .navbarlist{
+                #navbarlist{
                     padding-top: 10px;
                     padding-right: 30px;
                     display: flex;
@@ -31,8 +32,7 @@
                 #navbarlinks{
                     display: flex;
                     gap: 10px;
-                    padding-top: 8px;
-                    
+                    padding-top: 10px;
                 }
                 #appsimage{
                     padding-right: 10px;
@@ -51,12 +51,43 @@
                     flex-direction: column;
                     align-content: center;
                     text-align: center;
-                    gap: 10px;                  
+                    gap: 10px;                
                 }
                 #logo{
+                    padding-top: 48px;
+                    padding-bottom: 16px;
                     display: flex;
                     justify-content: center;
-
+                }
+                #form{
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid #dfe1e5;
+                    margin-left: 620px;
+                    border-radius: 24px;
+                    width: 600px;
+                }
+                #searchimg{
+                    height: 40px;
+                    width: 44px;
+                }
+                #search{
+                    padding-left: 15px;
+                    width: 500px;
+                    border: none;
+                    height: 40px;
+                }
+                #buttons{
+                    padding-top: 20px;
+                }
+                .searchbuttons{
+                    background-color: #f2f2f2;
+                    color: #5f6368;
+                    border: 1px solid #f2f2f2;
+                    border-radius: 4px;
+                    height: 30px;
+                    width: 135px;
+                    font-family: Arial, sans-serif;
                 }
                 footer{
                     position: absolute;
@@ -85,10 +116,12 @@
                 }
                 a{
                     text-decoration: none;
+                    color: inherit;
                 }
             </style>
+
             <nav id="navbar">
-                <div class="navbarlist">
+                <div id="navbarlist">
                     <ul>
                         <div id="navbarlinks">
                             <li>
@@ -102,27 +135,29 @@
                         <img id="appsimage" src="apps.png">
                             <div id="navbarbuttons">
                                 <button id="button-signin">
-                                    <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign In</a>
+                                    <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign in</a>
                                 </button>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
+
             <section id="center">
                 <div id="logo">
                     <img src="googlelogo_color_272x92dp.png">
                 </div>
                 <div id="form">
+                    <img id="searchimg" src="search.png">
                     <form>
                         <input id="search" type="text">
                     </form>
                 </div>
                 <div id="buttons">
-                    <button>
+                    <button class="searchbuttons">
                         Google Search
                     </button>
-                    <button>
+                    <button class="searchbuttons">
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">I'm Feeling Lucky</a>
                     </button>
                 </div>
@@ -138,7 +173,7 @@
                             <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
                         </li>
                         <li>
-                            <a href="https://about.google/?fg=1&utm_source=google-US">About</a>
+                            <a href="https://about.google/?fg=1">About</a>
                         </li>
                         <li>
                             <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
@@ -146,17 +181,18 @@
                     </ul>
                     <ul id="footerlinks-right">
                         <li>
-                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjy9OPN1v7pAhXE3oUKHd8cCh8Q8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri">Privacy</a>
+                            <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
                         </li>
                         <li>
-                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjy9OPN1v7pAhXE3oUKHd8cCh8Q8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">Terms</a>
+                            <a href="https://policies.google.com/terms?fg=1">Terms</a>
                         </li>
                         <li>
-                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjy9OPN1v7pAhXE3oUKHd8cCh8Qzq0CCBM&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a>
+                            <a href="https://www.google.com/preferences?hl=en">Settings</a>
                         </li>
                     </ul>
                 </div>
             </footer>
+
         </main>
     </body>
 </html>
