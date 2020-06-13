@@ -4,53 +4,156 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            
+            Google
         </title>
     </head>
-    <body style="background-color: white">
+    <body>
         <main>
             <style>
                 body{
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    margin:0;
                 }
                 #navbar{
-
+                    height: 150px;
                 }
-                #image{
+                .navbarlist{
+                    padding-top: 10px;
+                    padding-right: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+                    justify-content: center;
+                    font-family: Arial, sans-serif;
+                    font-size: 13px;
+                    float: right;
+                }
+                #navbarlinks{
+                    display: flex;
+                    gap: 10px;
+                    padding-top: 8px;
                     
                 }
-                #form{
-                    
+                #appsimage{
+                    padding-right: 10px;
                 }
-                #footer{
+                #button-signin{
+                    background-color: #4285f4;
+                    border: #4285f4;
+                    color: white;
+                    border-radius: 2px;
+                    padding: 13px;
+                    line-height: 7px;
+                    font-weight: bold;
+                }
+                #center{
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    text-align: center;
+                    gap: 10px;                  
+                }
+                #logo{
+                    display: flex;
+                    justify-content: center;
 
+                }
+                footer{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100vw;
+                    background-color: #f2f2f2;
+                }
+                #footerlist{
+                    display: flex;
+                    color:#5f6368;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    width: 100vw;        
+                }
+                #footerlinks-left{
+                    gap: 15px;
+                }
+                #footerlinks-right{
+                    margin-left: 67.5%;
+                    gap: 15px;
+                    padding-right: 10px;
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
                 }
             </style>
             <nav id="navbar">
-                
+                <div class="navbarlist">
+                    <ul>
+                        <div id="navbarlinks">
+                            <li>
+                                Gmail
+                            </li>
+                            <li>
+                                Images
+                            </li>
+                            <li>
+                        </div>
+                        <img id="appsimage" src="apps.png">
+                            <div id="navbarbuttons">
+                                
+                                <button id="button-signin">
+                                     Sign In
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+            <section id="center">
+                <div id="logo">
+                    <img src="googlelogo_color_272x92dp.png">
+                </div>
+                <div id="form">
+                    <form>
+                        <input id="search" type="text">
+                    </form>
+                </div>
+                <div id="buttons">
+                    <button>
+                        Google Search
+                    </button>
+                    <button>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">I'm Feeling Lucky</a>
+                    </button>
+                </div>
+        </section>
 
-            <div id="image">
-                <img src="googlelogo_color_272x92dp.png">
-            </div>
-
-            <div id="form">
-                <form>
-                    <input id="search" type="text">
-                </form>
-            </div>
-            <div id="buttons">
-                <button>
-                    Google Search
-                </button>
-                <button>
-                    I'm Feeling Lucky
-                </button>
-            </div>
-            
-
-            <footer id="footer">
-
+            <footer>
+                <div id="footerlist">
+                    <ul id="footerlinks-left">
+                        <li>
+                            Advertising
+                        </li>
+                        <li>
+                            Business
+                        </li>
+                        <li>
+                            About
+                        </li>
+                        <li>
+                            How Search works
+                        </li>
+                    </ul>
+                    <ul id="footerlinks-right">
+                        <li>
+                            Privacy
+                        </li>
+                        <li>
+                            Terms
+                        </li>
+                        <li>
+                            Settings
+                        </li>
+                    </ul>
+                </div>
             </footer>
         </main>
     </body>
